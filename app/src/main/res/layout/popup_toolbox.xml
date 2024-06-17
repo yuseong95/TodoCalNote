@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+    <Button
+        android:id="@+id/btn_addCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="☐"
+        android:textSize="14sp"
+        android:padding="2dp"/>
+
+    <Button
+        android:id="@+id/btn_bullet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="•"
+        android:textSize="14sp"
+        android:padding="2dp"/>
+
+    <Button
+        android:id="@+id/btn_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1."
+        android:textSize="14sp"
+        android:padding="2dp"/>
+
+    <Button
+        android:id="@+id/btn_indent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indent"
+        android:textSize="14sp"
+        android:padding="2dp"/>
+
+    <Button
+        android:id="@+id/btn_outdent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outdent"
+        android:textSize="14sp"
+        android:padding="2dp"/>
+</LinearLayout>

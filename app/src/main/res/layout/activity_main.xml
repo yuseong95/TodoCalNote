@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Calendar View Container -->
+    <LinearLayout
+        android:id="@+id/calendarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_border"
+        android:padding="8dp">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Selected Date and Information -->
+    <LinearLayout
+        android:id="@+id/dateInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/calendarContainer"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_selectedDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_dateDiff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="오늘"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <!-- Memo List Container -->
+    <LinearLayout
+        android:id="@+id/memoListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@id/dateInfoLayout"
+        android:layout_above="@+id/btn_deleteSelectedMemos"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_border"
+        android:padding="8dp">
+
+        <ListView
+            android:id="@+id/lv_memoList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"/>
+    </LinearLayout>
+
+    <!-- Add Memo Button -->
+    <Button
+        android:id="@+id/btn_addMemo"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_add_circle" />
+
+    <!-- Delete Selected Memos Button -->
+    <Button
+        android:id="@+id/btn_deleteSelectedMemos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="선택 메모 삭제"
+        android:onClick="deleteSelectedMemos"/>
+
+    <!-- Filter Button -->
+    <Button
+        android:id="@+id/btn_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="마감만"/>
+</RelativeLayout>
