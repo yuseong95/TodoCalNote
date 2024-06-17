@@ -10,7 +10,7 @@ import android.util.Log;
 public class MemoDatabaseHelper extends SQLiteOpenHelper {
     // 데이터베이스 이름과 버전 상수 선언
     private static final String DATABASE_NAME = "memo.db"; // 데이터베이스 이름
-    private static final int DATABASE_VERSION = 4; // 데이터베이스 버전
+    private static final int DATABASE_VERSION = 5; // 데이터베이스 버전
     private static final String TAG = "MemoDatabaseHelper"; // 로그 태그
 
     // 생성자

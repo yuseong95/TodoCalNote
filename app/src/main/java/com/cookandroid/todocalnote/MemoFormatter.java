@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.text.Editable;
 import android.text.Layout;
 import android.text.Spannable;
+import android.text.style.AbsoluteSizeSpan;
 import android.text.style.AlignmentSpan;
 import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
@@ -196,7 +197,7 @@ public class MemoFormatter {
         int start = etMemoContent.getSelectionStart();
         int end = etMemoContent.getSelectionEnd();
         Editable editable = etMemoContent.getText();
-        editable.setSpan(new RelativeSizeSpan(textSize / 12.0f), start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE); // 12sp를 기본 크기로 가정
+        editable.setSpan(new AbsoluteSizeSpan(textSize, true), start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
     }
 
     // 체크박스 클릭 가능한 스팬 생성 메서드
