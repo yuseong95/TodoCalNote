@@ -214,17 +214,17 @@ public class MemoActivity extends AppCompatActivity {
     // 텍스트 크기 설정 다이얼로그 표시 메서드
     private void showTextSizeDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Enter text size:");
+        builder.setTitle("텍스트 사이즈 입력:");
 
         final EditText input = new EditText(this);
         input.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
         builder.setView(input);
 
-        builder.setPositiveButton("OK", (dialog, which) -> {
+        builder.setPositiveButton("확인", (dialog, which) -> {
             int textSize = Integer.parseInt(input.getText().toString());
             MemoFormatter.applyTextSize(etMemoContent, textSize); // 입력된 텍스트 크기 적용
         });
-        builder.setNegativeButton("Cancel", (dialog, which) -> dialog.cancel()); // 취소 버튼 설정
+        builder.setNegativeButton("취소", (dialog, which) -> dialog.cancel()); // 취소 버튼 설정
 
         builder.show(); // 다이얼로그 표시
     }
