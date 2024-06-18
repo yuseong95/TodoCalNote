@@ -59,9 +59,9 @@ TodoCal은 캘린더와 메모 기능을 통합하여 할 일 목록을 한 플�
 ## 소개영상
 Youtube 동영상
 
-[![YouTube](https://img.youtube.com/vi/zBxPmBJiYLc/maxresdefault.jpg)](https://www.youtube.com/watch?v=zBxPmBJiYLc)
+[![YouTube](https://img.youtube.com/vi/Sxrht0nDUI0/maxresdefault.jpg)](https://www.youtube.com/watch?v=Sxrht0nDUI0)
 
-(https://youtu.be/zBxPmBJiYLc)
+(https://youtu.be/Sxrht0nDUI0)
 
 ---
 **감사합니다!**
